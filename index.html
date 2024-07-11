@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Match Banner</title>
+    <style>
+        @font-face {
+            font-family: 'Bebas Neue';
+            src: url('path-to-your-font/BebasNeue-Regular.woff2') format('woff2'), /* Update path to your font file */
+                 url('path-to-your-font/BebasNeue-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue font */
+        }
+        .banner-container {
+            position: relative;
+            width: 1350px;
+            height: 680px;
+        }
+        .banner {
+            width: 100%;
+            height: 100%;
+            background-image: url('worldcupbanner1.jpg'); /* Ensure this path is correct */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+        .link-button {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 25px 100px; /* Increased padding for larger button */
+            font-size: 36px; /* Larger font size */
+            font-weight: bold; /* Bold text */
+            color: white;
+            background-color: #ff3333; /* Stronger red color */
+            border: 3px solid #cc0000; /* Red border */
+            border-radius: 30px; /* Rounded edges */
+            text-decoration: none;
+            text-transform: uppercase; /* Uppercase text */
+            letter-spacing: 2px; /* Increased letter spacing */
+            box-shadow: 0px 5px 0px 0px #cc0000; /* Simulated 3D effect */
+            transition: box-shadow 0.3s ease; /* Smooth transition */
+            cursor: pointer;
+            text-align: center; /* Center text horizontally */
+            display: inline-block;
+        }
+        .link-button:hover {
+            box-shadow: 0px 8px 0px 0px #cc0000; /* Increased shadow on hover */
+            background-color: #cc0000; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner-container">
+    <div class="banner"></div>
+    <a href="http://www.12bet.com/index.aspx" class="link-button">JOIN NOW!</a>
+</div>
+
+</body>
+</html>
